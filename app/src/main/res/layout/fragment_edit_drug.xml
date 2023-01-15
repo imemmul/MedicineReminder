@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".drugs.EditDrugFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drug_name"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edit_drug_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_drug"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/everyday" />
+
+                    <LinearLayout
+                        android:id="@+id/cb_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_sunday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/sunday" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_monday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/monday" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_tuesday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/tuesday" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_wednesday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/wednesday" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cd_thursday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/thursday" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_friday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/friday" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_saturday"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/saturday" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="266dp"
+                    android:layout_height="73dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/reminder_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reminder"
+                        android:textColor="@color/purple_700"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tv_medicine_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#4d4d4d"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:text="23:30" />
+
+                        <EditText
+                            android:id="@+id/tv_dose_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/pcs"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_dose_units"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:entries="@array/intake_types"
+                            android:scrollbarSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/cancelbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

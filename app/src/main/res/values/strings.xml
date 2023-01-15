@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Project</string>
+
+
+    <string name="add"></string>
+    <string name="enter_drug_name">enter drug name</string>
+    <string name="time">12:00</string>
+    <string name="days">Medicine Days</string>
+    <string name="drug_name">Drug Name</string>
+    <string name="everyday">Everyday</string>
+    <string name="sunday">S</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">T</string>
+    <string name="friday">F</string>
+    <string name="saturday">S</string>
+    <string name="reminder">Reminder</string>
+    <string name="cancel">CANCEL</string>
+    <string name="enter_drug">Enter Drug</string>
+    <string name="pcs">1.0</string>
+
+</resources>
